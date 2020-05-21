@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      <ion-icon style="display:block; margin:0 auto" name="arrow-forward-circle-outline"></ion-icon>
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,42 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-icon name="arrow-forward-circle-outline"></ion-icon>
     </ion-toolbar>
   </ion-header>
+  <div class="barraefiltro">
+    <ion-searchbar class="barra" animated placeholder="Buscar Negócios"></ion-searchbar>
+    <ion-icon class="filtro" name="filter"></ion-icon>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-row>
+    <ion-col [routerLink]="['/anuncio']" class="grid" size="6">
+      <p style="padding-top:8px;">Restaurante do Zé</p>
+      <img class="img" src="../../assets/rest.jpg">
+      <p>Self-service</p>
+      <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star-half"></ion-icon>
+    </ion-col>
+    <ion-col class="grid" size="6">
+      <p style="padding-top:8px;">Junior Sushi</p>
+      <img class="img" src="../../assets/sushirest.jpg">
+      <p>Japonês</p>
+      <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star-half"></ion-icon>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="grid" size="6">
+      <p style="padding-top:8px;">Abacate Pizzas</p>
+      <img class="img" src="../../assets/pizzarest.jpg">
+      <p>Pizzaria</p>
+      <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon>
+    </ion-col>
+    <ion-col class="grid" size="6">
+      <p style="padding-top:8px;">Hasburguers</p>
+      <img class="img" src="../../assets/hambrest.jpg">
+      <p>Hamburgueria</p>
+      <ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star"></ion-icon><ion-icon class="star" name="star-half"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+<div style="padding-top:80px;"></div>
 </ion-content>

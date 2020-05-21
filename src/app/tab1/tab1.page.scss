@@ -1,0 +1,37 @@
+.grid {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius:15px;
+
+}
+
+.grid:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.img {
+  max-width:85%;
+  display: block;
+  margin:0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius:20px;
+}
+
+.star {
+  /*color:yellow;*/
+  font-size:12px;
+}
+
+.barraefiltro {
+  display:flex;
+}
+
+.barra {
+  display:inline-block;
+}
+
+.filtro {
+  display:inline-block;
+  font-size:60px;
+}
